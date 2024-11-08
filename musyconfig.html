@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: "Noto Sans", serif;
+        }
+        body {
+            background-color: black;
+        }
+        h1, form, input {
+            color: white;
+        }
+        .button {
+            background-color: black
+        }
+        .musy {
+            background-color: black
+        }
+    </style>
+    <meta https-equiv="Content-Security-Policy" content="default-src *;" />
+</head>
+<body>
+    <h1>Welcome to Musy</h1>
+    <form>
+        <label for="musy">Music URL (Please use public domain music! We do not endorse piracy.)</label><br>
+        <input type="text" id="musy" name="musy" placeholder="https://spotify.com" class="musy">
+        <input type="submit" value="Submit" class="button" id="btn">
+      </form>
+      <br>
+      <audio type="audio/mp3" controls src="https://github.com/anars/blank-audio/raw/refs/heads/master/1-minute-of-silence.mp3" id="player"></audio>
+      <script src="musy.js"></script>
+</body>
+</html>
