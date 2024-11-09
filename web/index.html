@@ -18,7 +18,8 @@
             color: white;
         }
         .button {
-            background-color: black
+            background-color: black;
+            color: white
         }
         .musy {
             background-color: black
@@ -27,7 +28,8 @@
 </head>
 <body>
     <h1>Welcome to Musy Web</h1>
-    <a href="https://github.com/wish13yt/musy">get Musy's extension</a>
+    <button onclick="testMode()" class="button">test mode (powered by <a href="https://www.onlinemictest.com/sound-test/">https://www.onlinemictest.com/sound-test/</a>)</button>
+    <a href="https://github.com/wish13yt/musy"><button class="button">get Musy's extension</button></a>
     <form>
         <label for="musy">Music URL (Please use public domain music! We do not endorse piracy.)</label><br>
         <input type="text" id="musy" name="musy" placeholder="https://spotify.com" class="musy">
@@ -37,5 +39,6 @@
       <audio type="audio/mp3" controls src="https://github.com/anars/blank-audio/raw/refs/heads/master/1-minute-of-silence.mp3" id="player"></audio>
       <footer>You assume responsibilty for how you play music. If you use piracy to play music, you agree not to blame me. You are responsible for what music you play and how you get it!</footer>
       <script src="musy.js"></script>
+      <!-- https://www.onlinemictest.com/wp-content/themes/onlinemictest/sound.mp3 -->
 </body>
 </html>
