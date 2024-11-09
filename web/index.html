@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: "Noto Sans", serif;
+        }
+        body {
+            background-color: black;
+        }
+        h1, form, input, footer {
+            color: white;
+        }
+        .button {
+            background-color: black
+        }
+        .musy {
+            background-color: black
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Musy Web</h1>
+    <a href="https://github.com/wish13yt/musy">get Musy's extension</a>
+    <form>
+        <label for="musy">Music URL (Please use public domain music! We do not endorse piracy.)</label><br>
+        <input type="text" id="musy" name="musy" placeholder="https://spotify.com" class="musy">
+        <input type="submit" value="Submit" class="button" id="btn">
+      </form>
+      <br>
+      <audio type="audio/mp3" controls src="https://github.com/anars/blank-audio/raw/refs/heads/master/1-minute-of-silence.mp3" id="player"></audio>
+      <footer>You assume responsibilty for how you play music. If you use piracy to play music, you agree not to blame me. You are responsible for what music you play and how you get it!</footer>
+      <script src="musy.js"></script>
+</body>
+</html>
