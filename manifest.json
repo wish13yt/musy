@@ -1,7 +1,7 @@
 {
     "name": "Musy",
     "description": "music for Chrome",
-    "version": "1",
+    "version": "2",
     "manifest_version": 3,
     "action": {
         "default_popup": "musyconfig.html",
