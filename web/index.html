@@ -39,6 +39,9 @@
         p, h2 {
             color: white
         }
+        .music {
+            color: lightblue
+        }
     </style>
     <meta content="Musy" property="og:title" />
     <meta content="Play music via a URL in your browser!" property="og:description" />
@@ -59,15 +62,12 @@
       <audio type="audio/mp3" controls src="https://github.com/anars/blank-audio/raw/refs/heads/master/1-minute-of-silence.mp3" id="player"></audio>
       <footer>You assume responsibilty for how you play music. If you use piracy to play music, you agree not to blame me. You are responsible for what music you play and how you get it!</footer>
       <script src="musy.js"></script>
-      <!-- https://www.onlinemictest.com/wp-content/themes/onlinemictest/sound.mp3 -->
-      <!-- you dummy you left this in so remove it!! -->
-      <div id="musiclibrary">
+    <div id="musiclibrary">
         <h1>Library</h1>
         <h2>Click titles to play them!</h2>
-        <p onclick="playMusic1()">Creative Technology Showreel (1:50)</p>
+        <p onclick="playMusic1()" class="music">Creative Technology Showreel (1:50)</p>
         <p>Music by <a href="https://pixabay.com/users/pumpupthemind-19969411/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=241274">Ivan Ohanezov</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=241274">Pixabay</a></p>
-      <!-- ill add more later but gtg -->
     </div>
-      <script src="lib.js"></script>
+    <script src="lib.js"></script>
 </body>
 </html>
